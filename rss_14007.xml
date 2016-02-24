@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcastRF="http://radiofrance.fr/Lancelot/Podcast#">
+	<channel>
+		<title>Le masque et la plume</title>
+		<link>http://www.radiofrance.fr/</link>
+		<description>Les critiques font de la résistance sur France Inter</description>
+		<language>fr</language>
+		<copyright>Radio France</copyright>
+		<lastBuildDate>Mon, 08 Feb 2016 20:00:14 +0100</lastBuildDate>
+		<generator>Radio France</generator>
+		<image>
+			<url>http://media.radiofrance-podcast.net/podcast09/RF_OMM_0000006234_ITE.jpg</url>
+			<title>Le masque et la plume</title>
+			<link>http://www.radiofrance.fr/</link>
+		</image>
+		<itunes:author>Radio France</itunes:author>
+		<itunes:category text="Arts"/>
+		<itunes:category text="News &amp; Politics"/>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:image href="http://media.radiofrance-podcast.net/podcast09/RF_OMM_0000006234_ITE.jpg"/>
+		<itunes:owner>
+			<itunes:email>podcast@radiofrance.com</itunes:email>
+			<itunes:name>Radio France</itunes:name>
+		</itunes:owner>
+		<itunes:subtitle>Le masque et la plume</itunes:subtitle>
+		<itunes:summary>Les critiques font de la résistance sur France Inter</itunes:summary>
+		<podcastRF:originStation>1000</podcastRF:originStation>
+		<item>
+			<title>Les films de la quinzaine</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-films-de-la-quinzaine-16</link>
+			<description>durée : 00:54:34 - Le masque et la plume - par : Jérôme GARCIN - « Chocolat », Roschdy Zem / « Steve Jobs », Danny Boyle / « Les Premiers les Derniers », Bouli Lanners / « 45 ans », Andrew Haigh / « Préjudice », Antoine Cuypers / « Spotlight », Thomas McCarthy / « Les Tuche 2 », Olivier Baroux
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53006336" type="audio/mpeg" url="http://rf.proxycast.org/1127752494110220289/14007-07.02.2016-ITEMA_20907429-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-07.02.2016-ITEMA_20907429-1.mp3</guid>
+			<pubDate>Sun, 07 Feb 2016 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2016F4007S0038</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12208882</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,films,de,la,quinzaine</itunes:keywords>
+			<itunes:subtitle>Émission du 07.02.2016</itunes:subtitle>
+			<itunes:summary>durée : 00:54:34 - par : Jérôme GARCIN - « Chocolat », Roschdy Zem / « Steve Jobs », Danny Boyle / « Les Premiers les Derniers », Bouli Lanners / « 45 ans », Andrew Haigh / « Préjudice », Antoine Cuypers / « Spotlight », Thomas McCarthy / « Les Tuche 2 », Olivier Baroux
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:34</itunes:duration>
+		</item>
+		<item>
+			<title>Sur les planches</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-sur-les-planches-8</link>
+			<description>durée : 00:54:41 - Le masque et la plume - par : Jérôme GARCIN - Romeo et Juliette, Shakespeare (Cie-Française) et Richard III (Odéon)/A tort et à raison, Harwood (Hébertot)/Bettencourt boulevard, Vinaver (Colline)/De l’influence des rayons Gamma…, Zindel (Atelier)/Qui a peur de Virginia Woolf, Albee (L’Œuvre)
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53112832" type="audio/mpeg" url="http://rf.proxycast.org/1125326711152451585/14007-31.01.2016-ITEMA_20901848-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-31.01.2016-ITEMA_20901848-1.mp3</guid>
+			<pubDate>Sun, 31 Jan 2016 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2016F4007S0031</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12192614</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Sur,les,planches</itunes:keywords>
+			<itunes:subtitle>Émission du 31.01.2016</itunes:subtitle>
+			<itunes:summary>durée : 00:54:41 - par : Jérôme GARCIN - Romeo et Juliette, Shakespeare (Cie-Française) et Richard III (Odéon)/A tort et à raison, Harwood (Hébertot)/Bettencourt boulevard, Vinaver (Colline)/De l’influence des rayons Gamma…, Zindel (Atelier)/Qui a peur de Virginia Woolf, Albee (L’Œuvre)
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:41</itunes:duration>
+		</item>
+		<item>
+			<title>Les films à voir ou pas</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-films-a-voir-ou-pas-16</link>
+			<description>durée : 00:54:14 - Le masque et la plume - par : Jérôme GARCIN - « Carol », Todd Haynes / « Le Convoi », Frédéric Schoendoerffer / « Et ta sœur ? », Marion Vernoux / « Les Chevaliers blancs », Joachim Lafosse / « Creed », Ryan Coogler / « Arrête ton cinéma ! », Diane Kurys
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="52690944" type="audio/mpeg" url="http://rf.proxycast.org/1122355826170798081/14007-24.01.2016-ITEMA_20896344-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-24.01.2016-ITEMA_20896344-1.mp3</guid>
+			<pubDate>Sun, 24 Jan 2016 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2016F4007S0024</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12145430</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,films,à,voir,ou,pas</itunes:keywords>
+			<itunes:subtitle>Émission du 24.01.2016</itunes:subtitle>
+			<itunes:summary>durée : 00:54:14 - par : Jérôme GARCIN - « Carol », Todd Haynes / « Le Convoi », Frédéric Schoendoerffer / « Et ta sœur ? », Marion Vernoux / « Les Chevaliers blancs », Joachim Lafosse / « Creed », Ryan Coogler / « Arrête ton cinéma ! », Diane Kurys
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:14</itunes:duration>
+		</item>
+		<item>
+			<title>Les livres à lire ou pas</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-livres-a-lire-ou-pas-12</link>
+			<description>durée : 00:54:15 - Le masque et la plume - par : Jérôme GARCIN - « Envoyée spéciale », Jean Echenoz (Minuit)/« Histoire de la violence », Edouard Louis (Seuil)/
+« La renverse », Olivier Adam (Flammarion)/« Celle que vous croyez », Camille Laurens (Gallimard)/« François le Petit », Patrick Rambaud
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="52705280" type="audio/mpeg" url="http://rf.proxycast.org/1119760136995348480/14007-17.01.2016-ITEMA_20890868-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-17.01.2016-ITEMA_20890868-1.mp3</guid>
+			<pubDate>Sun, 17 Jan 2016 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2016F4007S0017</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12124382</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,livres,à,lire,ou,pas</itunes:keywords>
+			<itunes:subtitle>Émission du 17.01.2016</itunes:subtitle>
+			<itunes:summary>durée : 00:54:15 - par : Jérôme GARCIN - « Envoyée spéciale », Jean Echenoz (Minuit)/« Histoire de la violence », Edouard Louis (Seuil)/
+« La renverse », Olivier Adam (Flammarion)/« Celle que vous croyez », Camille Laurens (Gallimard)/« François le Petit », Patrick Rambaud
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:15</itunes:duration>
+		</item>
+		<item>
+			<title>Les films à l'affiche</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-films-a-laffiche-6</link>
+			<description>durée : 00:55:05 - Le masque et la plume - par : Jérôme GARCIN - « Les huit salopards », Quentin Tarentino
+« Mistress America »,Noah Baumbach/ « La fille du patron », Olivier Loustau/ « Arrêtez-moi là », Gilles Bannier/ « Bang Bang, une histoire d’amour moderne », Eva Husson/ « Janis », Amy J. Berg
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="54449120" type="audio/mpeg" url="http://rf.proxycast.org/1117162694550495233/14007-10.01.2016-ITEMA_20885261-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-10.01.2016-ITEMA_20885261-1.mp3</guid>
+			<pubDate>Sun, 10 Jan 2016 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2016F4007S0010</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12096962</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,films,à,l'affiche</itunes:keywords>
+			<itunes:subtitle>Émission du 10.01.2016</itunes:subtitle>
+			<itunes:summary>durée : 00:55:05 - par : Jérôme GARCIN - « Les huit salopards », Quentin Tarentino
+« Mistress America »,Noah Baumbach/ « La fille du patron », Olivier Loustau/ « Arrêtez-moi là », Gilles Bannier/ « Bang Bang, une histoire d’amour moderne », Eva Husson/ « Janis », Amy J. Berg
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:55:05</itunes:duration>
+		</item>
+		<item>
+			<title>Les films de la quinzaine</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-films-de-la-quinzaine-15</link>
+			<description>durée : 00:54:45 - Le masque et la plume - par : Jérôme GARCIN - « Star Wars », J.J. Abrams / « Tangerine », Sean Baker / « Je compte sur vous », Pascal Elbé /
+« Mountain May Depart », Jia Zhang-Ke / « L’attente », Piero Messina / « La vie très privée de M. Sim », Michel Leclerc
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="54121440" type="audio/mpeg" url="http://rf.proxycast.org/1114564401081360384/14007-03.01.2016-ITEMA_20879831-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-03.01.2016-ITEMA_20879831-1.mp3</guid>
+			<pubDate>Sun, 03 Jan 2016 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2016F4007S0003</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12075265</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,films,de,la,quinzaine</itunes:keywords>
+			<itunes:subtitle>Émission du 03.01.2016</itunes:subtitle>
+			<itunes:summary>durée : 00:54:45 - par : Jérôme GARCIN - « Star Wars », J.J. Abrams / « Tangerine », Sean Baker / « Je compte sur vous », Pascal Elbé /
+« Mountain May Depart », Jia Zhang-Ke / « L’attente », Piero Messina / « La vie très privée de M. Sim », Michel Leclerc
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:45</itunes:duration>
+		</item>
+		<item>
+			<title>Les livres à lire ou pas</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-livres-a-lire-ou-pas-11</link>
+			<description>durée : 00:54:14 - Le masque et la plume - par : Jérôme GARCIN - «La Cache», Christophe Boltanski (Stock)/« Les Prépondérants », Hédi Kaddour (Gallimard)/
+«Titus n’aimait pas Bérénice», Nathalie Azoulai (POL)/«L’enfer des codes», Mai Jia (Laffont)/
+«La France en automobile», Edith Wharton (Mercure de France)
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53613536" type="audio/mpeg" url="http://rf.proxycast.org/1111967789054173184/14007-27.12.2015-ITEMA_20874381-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-27.12.2015-ITEMA_20874381-1.mp3</guid>
+			<pubDate>Sun, 27 Dec 2015 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F4007S0361</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12054446</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,livres,à,lire,ou,pas</itunes:keywords>
+			<itunes:subtitle>Émission du 27.12.2015</itunes:subtitle>
+			<itunes:summary>durée : 00:54:14 - par : Jérôme GARCIN - «La Cache», Christophe Boltanski (Stock)/« Les Prépondérants », Hédi Kaddour (Gallimard)/
+«Titus n’aimait pas Bérénice», Nathalie Azoulai (POL)/«L’enfer des codes», Mai Jia (Laffont)/
+«La France en automobile», Edith Wharton (Mercure de France)
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:14</itunes:duration>
+		</item>
+		<item>
+			<title>Les films à l'affiche</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-films-a-laffiche-4</link>
+			<description>durée : 00:54:07 - Le masque et la plume - par : Jérôme GARCIN - « Mia Madre », Nani Moretti / « Le pont des espions », Steven Spielberg / « Un + Une », Claude Lelouch / « Le dernier jour de Rabin », Amos Gitaï / « Plus fort que les bombes », Joachim Trier/ « Knight of Cups », Terrence Malick
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53498848" type="audio/mpeg" url="http://rf.proxycast.org/1109370289243824128/14007-20.12.2015-ITEMA_20868776-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-20.12.2015-ITEMA_20868776-1.mp3</guid>
+			<pubDate>Sun, 20 Dec 2015 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F4007S0354</podcastRF:magnetothequeID>
+			<podcastRF:stepID>12027927</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,films,à,l'affiche</itunes:keywords>
+			<itunes:subtitle>Cinéma</itunes:subtitle>
+			<itunes:summary>durée : 00:54:07 - par : Jérôme GARCIN - « Mia Madre », Nani Moretti / « Le pont des espions », Steven Spielberg / « Un + Une », Claude Lelouch / « Le dernier jour de Rabin », Amos Gitaï / « Plus fort que les bombes », Joachim Trier/ « Knight of Cups », Terrence Malick
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:07</itunes:duration>
+		</item>
+		<item>
+			<title>Les livres à lire ou pas</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-les-livres-a-lire-ou-pas-10</link>
+			<description>durée : 00:54:19 - Le masque et la plume - par : Jérôme GARCIN - « Va et poste une sentinelle », H. Lee (Grasset)/« Les vies multiples d’Amory Clay », W. Boyd (Seuil)/« Moi et le diable », de N. Tosches (Albin Michel)/« Rien où poser sa tête », F. Frenkel (L’Arbalète)/« Recherche femme parfaite », A. Berest (Grasset)
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53695456" type="audio/mpeg" url="http://rf.proxycast.org/1101576126620246016/14007-29.11.2015-ITEMA_20852209-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-29.11.2015-ITEMA_20852209-1.mp3</guid>
+			<pubDate>Sun, 29 Nov 2015 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F4007S0333</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11755585</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Les,livres,à,lire,ou,pas</itunes:keywords>
+			<itunes:subtitle>Émission du 29.11.2015</itunes:subtitle>
+			<itunes:summary>durée : 00:54:19 - par : Jérôme GARCIN - « Va et poste une sentinelle », H. Lee (Grasset)/« Les vies multiples d’Amory Clay », W. Boyd (Seuil)/« Moi et le diable », de N. Tosches (Albin Michel)/« Rien où poser sa tête », F. Frenkel (L’Arbalète)/« Recherche femme parfaite », A. Berest (Grasset)
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:19</itunes:duration>
+		</item>
+		<item>
+			<title>Le Masque et la Plume fête ses 60 ans</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-le-masque-et-la-plume-fete-ses-60-ans</link>
+			<description>durée : 01:49:10 - Le masque et la plume - par : Jérôme GARCIN - Quelques notes de piano et le blues du dimanche soir s'évanouit. Depuis 60 ans, nous partageons les coups de coeur, coups de gueule, emportements, mauvaises fois, éclats de rire, émotions, déclarations d'amour des critiques du Masque et la Plume - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="107615200" type="audio/mpeg" url="http://rf.proxycast.org/1100309737389432832/14007-22.11.2015-ITEMA_20846824-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-22.11.2015-ITEMA_20846824-1.mp3</guid>
+			<pubDate>Sun, 22 Nov 2015 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F4007S0326</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11723862</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Le,Masque,et,la,Plume,fête,ses,60,ans</itunes:keywords>
+			<itunes:subtitle>Émission du 22.11.2015</itunes:subtitle>
+			<itunes:summary>durée : 01:49:10 - par : Jérôme GARCIN - Quelques notes de piano et le blues du dimanche soir s'évanouit. Depuis 60 ans, nous partageons les coups de coeur, coups de gueule, emportements, mauvaises fois, éclats de rire, émotions, déclarations d'amour des critiques du Masque et la Plume - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>01:49:10</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Cinéma-Titanic (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:08:28 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="8623072" type="audio/mpeg" url="http://rf.proxycast.org/1103489657036873728/14007-16.11.2015-ITEMA_20841943-16.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-16.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 08:40:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0017</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865580</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Cinéma-Titanic,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Cinéma-Titanic (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:08:28 - </itunes:summary>
+			<itunes:duration>00:08:28</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Cinéma-Les enfants du silence (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:07:17 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="7459808" type="audio/mpeg" url="http://rf.proxycast.org/1103489654608371712/14007-16.11.2015-ITEMA_20841943-15.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-15.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 08:30:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0016</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865578</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Cinéma-Les,enfants,du,silence,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Cinéma-Les enfants du silence (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:07:17 - </itunes:summary>
+			<itunes:duration>00:07:17</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Bory et Charensol-Theoreme (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:01:37 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="1889248" type="audio/mpeg" url="http://rf.proxycast.org/1103489652146315264/14007-16.11.2015-ITEMA_20841943-14.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-14.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 08:20:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0015</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865576</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Bory,et,Charensol-Theoreme,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Bory et Charensol-Theoreme (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:01:37 - </itunes:summary>
+			<itunes:duration>00:01:37</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Bory et Charensol-Starwars (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:04:58 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="5182432" type="audio/mpeg" url="http://rf.proxycast.org/1103489650015608832/14007-16.11.2015-ITEMA_20841943-13.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-13.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 08:10:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0014</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865574</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Bory,et,Charensol-Starwars,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Bory et Charensol-Starwars (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:04:58 - </itunes:summary>
+			<itunes:duration>00:04:58</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Bory et Charensol-Le cerveau (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:04:49 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="5034976" type="audio/mpeg" url="http://rf.proxycast.org/1103489647503220736/14007-16.11.2015-ITEMA_20841943-12.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-12.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 08:00:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0013</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865572</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Bory,et,Charensol-Le,cerveau,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Bory et Charensol-Le cerveau (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:04:49 - </itunes:summary>
+			<itunes:duration>00:04:49</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Bory et Charensol-L'empire des sens (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:02:45 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="3003360" type="audio/mpeg" url="http://rf.proxycast.org/1103489638867148800/14007-16.11.2015-ITEMA_20841943-11.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-11.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 07:50:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0012</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865570</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Bory,et,Charensol-L'empire,des,sens,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Bory et Charensol-L'empire des sens (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:02:45 - </itunes:summary>
+			<itunes:duration>00:02:45</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Bory et Charensol-Chantons sous la Révolution (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:08:23 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="8541152" type="audio/mpeg" url="http://rf.proxycast.org/1103489636396703744/14007-16.11.2015-ITEMA_20841943-10.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-10.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 07:40:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0011</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865568</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Bory,et,Charensol-Chantons,sous,la,Révolution,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Bory et Charensol-Chantons sous la Révolution (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:08:23 - </itunes:summary>
+			<itunes:duration>00:08:23</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-theatre-Le nouveau roman divise (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:47:11 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="46683104" type="audio/mpeg" url="http://rf.proxycast.org/1103489632479223809/14007-16.11.2015-ITEMA_20841943-9.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-9.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 07:30:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0010</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865566</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-theatre-Le,nouveau,roman,divise,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-theatre-Le nouveau roman divise (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:47:11 - </itunes:summary>
+			<itunes:duration>00:47:11</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Livres-Moix passe un sale ¼ d'heure (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:53:50 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53220320" type="audio/mpeg" url="http://rf.proxycast.org/1103489627383144448/14007-16.11.2015-ITEMA_20841943-8.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-8.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 07:20:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0009</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865564</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Livres-Moix,passe,un,sale,¼,d'heure,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Livres-Moix passe un sale ¼ d'heure (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:53:50 - </itunes:summary>
+			<itunes:duration>00:53:50</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Livres-Foenkinos n'est pas à la fete (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:54:50 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="54203360" type="audio/mpeg" url="http://rf.proxycast.org/1103489611595784192/14007-16.11.2015-ITEMA_20841943-7.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-7.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 07:10:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0008</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865562</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Livres-Foenkinos,n'est,pas,à,la,fete,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Livres-Foenkinos n'est pas à la fete (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:54:50 - </itunes:summary>
+			<itunes:duration>00:54:50</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Livres-Sorin atomise Conchon (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:08:28 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="8623072" type="audio/mpeg" url="http://rf.proxycast.org/1103489605342076928/14007-16.11.2015-ITEMA_20841943-6.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-6.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 07:00:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0007</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865560</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Livres-Sorin,atomise,Conchon,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Livres-Sorin atomise Conchon (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:08:28 - </itunes:summary>
+			<itunes:duration>00:08:28</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Théâtre-Nerson se paie Adjani (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:54:24 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53777376" type="audio/mpeg" url="http://rf.proxycast.org/1103489601072275456/14007-16.11.2015-ITEMA_20841943-5.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-5.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 06:50:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0006</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865558</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Théâtre-Nerson,se,paie,Adjani,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Théâtre-Nerson se paie Adjani (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:54:24 - </itunes:summary>
+			<itunes:duration>00:54:24</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Théâtre-Sandier vs Jamet (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:02:09 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="2413536" type="audio/mpeg" url="http://rf.proxycast.org/1103489591643480065/14007-16.11.2015-ITEMA_20841943-4.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-4.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 06:40:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0005</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865556</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Théâtre-Sandier,vs,Jamet,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Théâtre-Sandier vs Jamet (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:02:09 - </itunes:summary>
+			<itunes:duration>00:02:09</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-Théâtre-Avignon 91 (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:52:52 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="52270048" type="audio/mpeg" url="http://rf.proxycast.org/1103489589441470464/14007-16.11.2015-ITEMA_20841943-3.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-3.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 06:30:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0004</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865554</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-Théâtre-Avignon,91,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-Théâtre-Avignon 91 (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:52:52 - </itunes:summary>
+			<itunes:duration>00:52:52</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-La 1ère de Garcin (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 01:05:01 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="64213984" type="audio/mpeg" url="http://rf.proxycast.org/1103489580910256129/14007-16.11.2015-ITEMA_20841943-2.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-2.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 06:20:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0003</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865552</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-La,1ère,de,Garcin,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-La 1ère de Garcin (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 01:05:01 - </itunes:summary>
+			<itunes:duration>01:05:01</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-La 1ère émission cinéma (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:28:08 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="27956192" type="audio/mpeg" url="http://rf.proxycast.org/1103489575122116608/14007-16.11.2015-ITEMA_20841943-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-1.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 06:10:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0002</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865550</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-La,1ère,émission,cinéma,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-La 1ère émission cinéma (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:28:08 - </itunes:summary>
+			<itunes:duration>00:28:08</itunes:duration>
+		</item>
+		<item>
+			<title>60ans-La création du Masque (Le masque et la plume)</title>
+			<link>http://www.radiofrance.fr/</link>
+			<description>durée : 00:07:37 - Le masque et la plume - </description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="7787488" type="audio/mpeg" url="http://rf.proxycast.org/1103489572236435456/14007-16.11.2015-ITEMA_20841943-0.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-16.11.2015-ITEMA_20841943-0.mp3</guid>
+			<pubDate>Mon, 16 Nov 2015 06:00:00 +0100</pubDate>
+			<podcastRF:businessReference>24457</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F24457E0001</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11865548</podcastRF:stepID>
+			<itunes:author>Radio France</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>60ans-La,création,du,Masque,(Le,masque,et,la,plume)</itunes:keywords>
+			<itunes:subtitle>60ans-La création du Masque (Le masque et la plume)</itunes:subtitle>
+			<itunes:summary>durée : 00:07:37 - </itunes:summary>
+			<itunes:duration>00:07:37</itunes:duration>
+		</item>
+		<item>
+			<title>Sur les planches</title>
+			<link>http://www.franceinter.fr/emission-le-masque-et-la-plume-sur-les-planches-7</link>
+			<description>durée : 00:54:31 - Le masque et la plume - par : Jérôme GARCIN - «Vu du Pont», Miller (Odéon)/«Fin de l’Histoire», Gombrowicz (Colline)/«Ça ira (1). Fin de Louis», Pommerat (Amandiers)/«Irma la douce», A. Breffort (Porte Saint-Martin)/«On achève bien les anges», Bartabas (Zingaro)/«Représailles», Assous (Michodière)
+ - réalisé par : Didier Lagarde</description>
+			<author>podcast@radiofrance.com</author>
+			<category>Arts </category>
+			<enclosure length="53892064" type="audio/mpeg" url="http://rf.proxycast.org/1096402832845709313/14007-15.11.2015-ITEMA_20841503-1.mp3"/>
+			<guid>http://media.radiofrance-podcast.net/podcast09/14007-15.11.2015-ITEMA_20841503-1.mp3</guid>
+			<pubDate>Sun, 15 Nov 2015 20:00:00 +0100</pubDate>
+			<podcastRF:businessReference>4007</podcastRF:businessReference>
+			<podcastRF:magnetothequeID>2015F4007S0319</podcastRF:magnetothequeID>
+			<podcastRF:stepID>11548254</podcastRF:stepID>
+			<itunes:author>Jérôme GARCIN</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>Sur,les,planches</itunes:keywords>
+			<itunes:subtitle>Émission du 15.11.2015</itunes:subtitle>
+			<itunes:summary>durée : 00:54:31 - par : Jérôme GARCIN - «Vu du Pont», Miller (Odéon)/«Fin de l’Histoire», Gombrowicz (Colline)/«Ça ira (1). Fin de Louis», Pommerat (Amandiers)/«Irma la douce», A. Breffort (Porte Saint-Martin)/«On achève bien les anges», Bartabas (Zingaro)/«Représailles», Assous (Michodière)
+ - réalisé par : Didier Lagarde</itunes:summary>
+			<itunes:duration>00:54:31</itunes:duration>
+		</item>
+	</channel>
+</rss>

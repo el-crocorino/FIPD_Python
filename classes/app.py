@@ -25,16 +25,23 @@ class app():
 
 	def initialize(self):
 
+		# Check if database exists, if not : creates it
 		if not os.path.isfile(self.conf['dir'] + '/sql/' + self.conf['db_name']):
 			sql.db_build.main()
 
+		# import database stored config data
 		config_mng = config_manager()
-		download_dir = config_mng.get_item('download_dir')
+		config_items = config_mng.get_all_items()
 
-		if download_dir == None:
-			download_dir = input('Please enter full path to download folder: ')
+		if any(config_items) :
+			for key, value in config_items.items():
+				self.conf[key] = value
 
-		self.conf['download_dir'] = download_dir
+		# Check download dir
+		if self.conf['download_dir'] == None or self.conf['download_dir'] == '':
+			self.conf['download_dir'] = input('Please enter full path to download folder: ')
+			config_mng.save(self.conf)
+
 
 	def print_flux_list(self):
 

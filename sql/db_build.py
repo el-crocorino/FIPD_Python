@@ -8,6 +8,7 @@ def main():
 	conf = config.get_conf()
 	connexion = start_db_connection(conf)
 
+	create_config_table(connexion)
 	create_flux_table(connexion)
 	create_show_table(connexion)
 
@@ -34,7 +35,7 @@ def create_config_table(conn):
 	conn.commit()
 
 	config = []
-	config.append(('download_dir', NULL))
+	config.append(('download_dir', None))
 	cursor.executemany("""INSERT INTO config(config_name, config_value) VALUES(?, ?)""", config)
 	conn.commit()
 

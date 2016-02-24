@@ -18,7 +18,7 @@ class flux_add():
 		keywords = input('Please enter show keywords, if any : ')
 
 		new_flux = flux(name, url, keywords)
-		new_flux_directory = self.conf['dir'] + '/Downloads/' + new_flux.name
+		new_flux_directory = self.conf['download_dir'] + '/' + new_flux.name
 
 		if not os.path.exists(new_flux_directory):
 			os.makedirs(new_flux_directory)

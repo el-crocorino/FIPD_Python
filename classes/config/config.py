@@ -12,10 +12,7 @@ class config(db_object):
 	def load(self, data):
 
 		self.id = data[0]
-		self.remote_id = data[1]
-		self.flux_id = data[2]
-		self.title = data[3]
-		self.url = data[4]
-		self.diffusion_date = data[5]
-		self.download_date = data[6]
-		self.status = data[7]
+		self.name = data[1]
+		self.value = data[2]
+		self.created_date = data[3]
+		self.updated_date = data[4]

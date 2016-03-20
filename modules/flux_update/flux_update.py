@@ -57,5 +57,5 @@ class flux_update():
 
 			flux.save([flux.__dict__])
 
-		return [True, True, '']
+		return [True, True, '', False]
 

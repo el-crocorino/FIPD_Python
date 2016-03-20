@@ -62,16 +62,17 @@ class app():
 
 		print('\n\nWelcome to the France Inter Podcast Downloader.')
 
-	def route(self, clear = True, message = ''):
+	def route(self, clear = True, message = '', display_list = False):
 
 		if clear:
 			os.system('cls' if os.name == 'nt' else 'clear')
 
 		if message != '':
 			print(message)
-
-		print('\n\nYou can currently download podcasts from the following shows : \n' + self.print_flux_list() + '\n\nYou can (D)ownload, (A)dd, (U)pdate or (R)emove a show.\n\nYou can also (F)lush the entire database to take a fresh new start, or simply (Q)uit.')
-
+			
+		if display_list:
+			print('\n\nYou can currently download podcasts from the following shows : \n' + self.print_flux_list() + '\n\nYou can (D)ownload, (A)dd, (U)pdate or (R)emove a show.\n\nYou can also (F)lush the entire database to take a fresh new start, or simply (Q)uit.')		
+		
 		action = input('Please enter action letter : ').upper()
 
 		module = None
@@ -92,7 +93,9 @@ class app():
 
 		if module != None:
 			action = module.run()
+		else:
+			self.route(False, 'Unknown action, please retry.', False)
 
 		if action[0]:
-			self.route(action[1], action[2])
+			self.route(action[1], action[2], action[3])
 

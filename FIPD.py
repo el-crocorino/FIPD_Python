@@ -12,6 +12,6 @@ def main():
 	FIPD = app()
 	FIPD.initialize()
 	FIPD.welcome()
-	FIPD.route(False, '')
+	FIPD.route(False, '', True)
 
 main()

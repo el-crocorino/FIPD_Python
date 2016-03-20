@@ -38,7 +38,7 @@ class flux_download():
 		try :
 			download_list = self.download_show_list()
 			report = 'Download report for ' + self.flux.name + ': ' + download_list
-			return [True, True, report]
+			return [True, True, report, True]
 		except Exception as e:
 			print(e)
 
@@ -91,10 +91,13 @@ class flux_download():
 			timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S +0100'))
 			show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
 
-			show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_diff_date + '_' + self.flux.name.replace(' ', '_') + '_' + show.title.replace(' ', '_') + '.mp3'
+			show_filename = show_diff_date + '_' + self.flux.name.replace(' ', '_') + '_' + show.title.replace(' ', '_') + '.mp3'
+
+			show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
 
 			if show.remote_id in show_dict and show_dict[show.remote_id].status == 'downloaded':
 				print('This show has already been downloaded on ', show_dict[show.remote_id].download_date)
+				download_report += '\n\t' + show_filename + ' - already downloaded (' + show_dict[show.remote_id].download_date + ')'
 			else :
 
 				show.status = 'error'
@@ -116,7 +119,7 @@ class flux_download():
 				show.download_date = '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
 				self.show_mng.save([show.__dict__])
 
-				download_report += '\n\t' + show.diffusion_date + ' ' + show.url + ' - ' + show.status
+				download_report += '\n\t' + show_filename + ' - ' + show.status
 
 		return download_report
 

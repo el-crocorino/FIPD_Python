@@ -25,5 +25,5 @@ class flux_add():
 
 		new_flux.save([new_flux.__dict__])
 
-		return [True, True, '']
+		return [True, True, '', False]
 

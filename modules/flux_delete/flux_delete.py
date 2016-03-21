@@ -16,4 +16,4 @@ class flux_delete():
 		flux = flux_mng.get_by_id(flux_id)
 		flux_mng.delete(flux.__dict__)
 
-		return [True, True, '']
+		return [True, True, '', False]

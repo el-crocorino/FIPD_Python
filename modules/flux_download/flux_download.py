@@ -1,17 +1,19 @@
 # flux download
 
-import requests
-import urllib
-import time
 import datetime
 import os
+import re
+import requests
 import sys
+import time
+import unicodedata
+import urllib
 
 import config
 
 from lxml import etree
-from urllib.request import urlopen
 from time import sleep
+from urllib.request import urlopen
 
 from classes.flux.flux import flux
 from classes.flux.flux_manager import flux_manager
@@ -92,7 +94,7 @@ class flux_download():
 			timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))
 			show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
 
-			show_filename = show_diff_date + '_' + self.flux.name.replace(' ', '_') + '_' + show.title.replace(' ', '_') + '.mp3'
+			show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title) + '.mp3'
 
 			show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
 
@@ -167,7 +169,13 @@ class flux_download():
 		f.close()
 
 		return file_size
-
-
+	
+	def get_valid_filename(self, value):
+		"""
+		copied fromDjango django/utils/text.py slugify() method
+		"""
+		value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
+		value = re.sub('[^\w\s-]', '', value).strip().lower()
+		return re.sub('[-\s]+', '-', value)
 
 

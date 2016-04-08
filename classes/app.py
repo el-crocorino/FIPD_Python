@@ -13,6 +13,7 @@ from modules.flux_add.flux_add import flux_add
 from modules.flux_delete.flux_delete import flux_delete
 from modules.flux_update.flux_update import flux_update
 from modules.flux_download.flux_download import flux_download
+from modules.fluxs_download.fluxs_download import fluxs_download
 from modules.database_flush.database_flush import database_flush
 
 import sql.db_build
@@ -90,6 +91,9 @@ class app():
 			module = flux_download()
 		elif action == 'F':
 			module = database_flush()
+		elif action == 'E':
+			module = fluxs_download()
+		
 
 		if module != None:
 			action = module.run()

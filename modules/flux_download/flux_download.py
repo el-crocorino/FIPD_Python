@@ -25,9 +25,10 @@ class flux_download():
 	def __init__(self):
 		self.conf = config.get_conf()
 
-	def run(self):
+	def run(self, flux_id = None):
 
-		flux_id = input('Please insert the id of the show you want to download : ')
+		if flux_id == None:
+			flux_id = input('Please insert the id of the show you want to download : ')
 
 		self.flux_mng = flux_manager()
 		self.flux = self.flux_mng.get_by_id(flux_id)
@@ -88,7 +89,7 @@ class flux_download():
 
 		for show in self.show_list:
 
-			timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S +0100'))
+			timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))
 			show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
 
 			show_filename = show_diff_date + '_' + self.flux.name.replace(' ', '_') + '_' + show.title.replace(' ', '_') + '.mp3'
@@ -96,8 +97,8 @@ class flux_download():
 			show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
 
 			if show.remote_id in show_dict and show_dict[show.remote_id].status == 'downloaded':
-				print('This show has already been downloaded on ', show_dict[show.remote_id].download_date)
-				download_report += '\n\t' + show_filename + ' - already downloaded (' + show_dict[show.remote_id].download_date + ')'
+				#print('This show has already been downloaded on ', show_dict[show.remote_id].download_date)
+				download_report += '\n\t' + show_diff_date + ' - ' + show.title[:27] + '... - already downloaded (' + show_dict[show.remote_id].download_date + ')'
 			else :
 
 				show.status = 'error'

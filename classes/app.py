@@ -15,6 +15,7 @@ from modules.flux_update.flux_update import flux_update
 from modules.flux_download.flux_download import flux_download
 from modules.fluxs_download.fluxs_download import fluxs_download
 from modules.database_flush.database_flush import database_flush
+from modules.settings_update.settings_update import settings_update
 
 import sql.db_build
 
@@ -70,10 +71,10 @@ class app():
 
 		if message != '':
 			print(message)
-			
+
 		if display_list:
-			print('\n\nYou can currently download podcasts from the following shows : \n' + self.print_flux_list() + '\n\nYou can (D)ownload, (A)dd, (U)pdate or (R)emove a show.\n\nYou can also (F)lush the entire database to take a fresh new start, or simply (Q)uit.')		
-		
+			print('\n\nYou can currently download podcasts from the following shows : \n' + self.print_flux_list() + '\n\nAvailable actions: \n\t- (D)ownload a show;\n\t- (A)dd a show;\n\t- (U)pdate a show;\n\t- (R)emove a show;\n\t- Download (E)very available shows;\n\t- Update (S)ettings;\n\t- (F)lush the database;\n\t- (Q)uit.')
+
 		action = input('Please enter action letter : ').upper()
 
 		module = None
@@ -81,6 +82,8 @@ class app():
 		if action == 'Q':
 			os.system('cls' if os.name == 'nt' else 'clear')
 			exit()
+		elif action == 'F':
+			module = database_flush()
 		elif action == 'A':
 			module = flux_add()
 		elif action == 'R':
@@ -89,11 +92,10 @@ class app():
 			module = flux_update()
 		elif action == 'D':
 			module = flux_download()
-		elif action == 'F':
-			module = database_flush()
 		elif action == 'E':
 			module = fluxs_download()
-		
+		elif action == 'S':
+			module = settings_update()
 
 		if module != None:
 			action = module.run()

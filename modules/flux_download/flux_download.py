@@ -51,7 +51,6 @@ class flux_download():
 
 	def load_xml(self):
 		
-		import requests
 		try:
 			ret = requests.head(self.flux.url)
 		except requests.exceptions.ConnectionError as e:

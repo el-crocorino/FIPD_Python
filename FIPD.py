@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # FIPD
 from classes.app import app
 from classes.show import show

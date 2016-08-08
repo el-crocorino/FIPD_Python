@@ -36,17 +36,27 @@ class flux_download():
 		self.flux = self.flux_mng.get_by_id(flux_id)
 
 		self.show_list = []
-		self.load_xml()
+		XMLLoading = self.load_xml()
+		
+		if( XMLLoading):
 
-		try :
-			download_list = self.download_show_list()
-			report = 'Download report for ' + self.flux.name + ': ' + download_list
-			return [True, True, report, True]
-		except Exception as e:
-			print(e)
+			try :
+				download_list = self.download_show_list()
+				report = 'Download report for ' + self.flux.name + ': ' + download_list
+				return [True, True, report, True]
+			except Exception as e:
+				print(e)
+		else:
+			return [True, False, 'Le flux n\'est pas accessible', True]
 
 	def load_xml(self):
-
+		
+		import requests
+		try:
+			ret = requests.head(self.flux.url)
+		except requests.exceptions.ConnectionError as e:
+			return False
+		
 		tree = etree.parse(self.flux.url)
 		self.xml_root = tree.getroot()
 
@@ -66,6 +76,8 @@ class flux_download():
 				new_show.load(show_data)
 
 				self.show_list.append(new_show)
+
+		return True
 
 	def get_show_data(self, xml_item):
 

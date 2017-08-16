@@ -30,10 +30,14 @@ class flux_download():
 	def run(self, flux_id = None):
 
 		if flux_id == None:
-			flux_id = input('Please insert the id of the show you want to download : ')
-
+			flux_id = int(input('Please insert the id of the show you want to download : '))
+		print(flux_id)
 		self.flux_mng = flux_manager()
-		self.flux = self.flux_mng.get_by_id(flux_id)
+		#self.flux = self.flux_mng.get_by_id(flux_id, 0)
+		
+		fluxData = self.flux_mng.get_by_id(flux_id, 0)
+		self.flux = flux(fluxData[1], fluxData[2], fluxData[3])
+		self.flux.id = fluxData[0]
 
 		self.show_list = []
 		XMLLoading = self.load_xml()

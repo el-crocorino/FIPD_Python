@@ -8,9 +8,9 @@ class show_manager(db_object):
 	def __init__(self):
 		super(show_manager, self).__init__('show', ['remote_id', 'flux_id', 'title', 'url', 'diffusion_date', 'download_date', 'status'])
 
-	def get_all(self):
+	def get_all(self, params, maxLimit):
 
-		rows = super(show_manager, self).get_all()
+		rows = super(show_manager, self).get_all(params, maxLimit)
 
 		items = []
 
@@ -26,7 +26,7 @@ class show_manager(db_object):
 
 	def	get_all_by_remote_id(self):
 
-		show_list = self.get_all()
+		show_list = self.get_all({}, 70)
 		show_dict = {}
 
 		for show in show_list:

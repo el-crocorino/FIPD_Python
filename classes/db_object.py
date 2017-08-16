@@ -11,6 +11,7 @@ class db_object():
 
                 conf = config.get_conf()
                 self.connexion = sqlite3.connect(conf['db_path'])
+                self.connexion.row_factory = sqlite3.Row
                 self.table = table
                 self.fields = fields
                 self.prefix = self.table + '_'
@@ -64,29 +65,41 @@ class db_object():
                 cursor.execute("""DELETE FROM sqlite_sequence WHERE name = '""" + self.table + """'""")
                 self.connexion.commit()
 
-        def get_all(self, where = {}):
+        def get_all(self, where, itemLimit):
 
                 cursor = self.connexion.cursor()
                 join_prefix = ', ' + self.prefix
+                
+                fields = """"""
+                fields += self.prefix + """id"""
+                for field in self.fields:
+                        fields += join_prefix + field
 
                 condition = """"""
 
                 if where:
                         condition = """ WHERE """
                         for field, value in where.items():
+                                print(field)
                                 if isinstance(value, str):
                                         condition += self.prefix + field + """ LIKE '""" + value + """'"""
                                 else:
                                         condition += self.prefix + field + """ = """ + str(value)
-
-                cursor.execute("""SELECT * FROM """ + self.table + condition)
+                
+                limit = """"""
+                if itemLimit:
+                        limit = """ LIMIT """ + str(itemLimit)
+                        
+                #print("""SELECT """ + fields + """ FROM """ + self.table + condition + limit)
+                
+                cursor.execute("""SELECT * FROM """ + self.table + condition + limit)
                 rows = cursor.fetchall()
-
+                
                 return rows
 
-        def get_by_id(self, id):
-
-                item_list = self.get_all({'id' : id})
+        def get_by_id(self, itemId, maxItems = None):                
+                
+                item_list = db_object.get_all(self, {'id' : itemId}, maxItems)
 
                 return item_list[0]
 

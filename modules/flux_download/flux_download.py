@@ -105,13 +105,18 @@ class flux_download():
 			timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))
 			show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
 
-			show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title) + '.mp3'
+			show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title)
+			if len(show_filename) > 65:
+				show_filename = show_filename[:65]
+				
+			show_filename += '.mp3'
 
 			show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
 
 			if show.remote_id in show_dict and show_dict[show.remote_id].status == 'downloaded':
 				#print('This show has already been downloaded on ', show_dict[show.remote_id].download_date)
 				download_report += '\n\t' + show_diff_date + ' - ' + show.title[:27] + '... - already downloaded (' + show_dict[show.remote_id].download_date + ')'
+				show.status = 'downloaded'			
 			else :
 
 				show.status = 'error'
@@ -123,7 +128,7 @@ class flux_download():
 					if remote_file_size == os.stat(show_path).st_size:
 						show.status = 'downloaded'
 
-					print('Downloaded '+ show_path)
+					print('Downloaded '+ show_filename)
 
 					show.status = 'downloaded'
 
@@ -148,7 +153,7 @@ class flux_download():
 
 		file_size = int(meta.get_all("Content-Length")[0])
 
-		print('Downloading: ' + show.diffusion_date + ' ' + show.url + '. ' + str(file_size / 1000000) + ' Mo')
+		print('Downloading: ' + show.diffusion_date + ' ' + show.title[:27] + '. ' + str(file_size / 1000000) + ' Mo')
 
 		file_size_dl = 0
 		block_sz = 1000000

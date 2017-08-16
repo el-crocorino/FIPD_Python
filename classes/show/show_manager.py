@@ -13,16 +13,19 @@ class show_manager(db_object):
 		rows = super(show_manager, self).get_all(params, maxLimit)
 
 		items = []
-
-		for row in rows:
-
-		    self.get_class('classes.' + self.table)
-
-		    new_show = show()
-		    new_show.load(row)
-		    items.append(new_show)
-
-		return items
+		
+		try: 
+			for row in rows:
+	
+			    self.get_class('classes.' + self.table)
+	
+			    new_show = show()
+			    new_show.load(row)
+			    items.append(new_show)
+	
+			return items
+		except Exception as e:
+			print(e)	
 
 	def	get_all_by_remote_id(self):
 

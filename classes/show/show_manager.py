@@ -5,12 +5,13 @@ from classes.show.show import show
 
 class show_manager(db_object):
 
-	def __init__(self):
+	def __init__(self, flux_id):
 		super(show_manager, self).__init__('show', ['remote_id', 'flux_id', 'title', 'url', 'diffusion_date', 'download_date', 'status'])
+		self.flux_id = flux_id
 
-	def get_all(self, params, maxLimit):
+	def get_all(self, params, maxLimit, order):
 
-		rows = super(show_manager, self).get_all(params, maxLimit)
+		rows = super(show_manager, self).get_all(params, maxLimit, order)
 
 		items = []
 		
@@ -29,7 +30,7 @@ class show_manager(db_object):
 
 	def	get_all_by_remote_id(self):
 
-		show_list = self.get_all({}, 70)
+		show_list = self.get_all({'flux_id': self.flux_id}, 100, 'show_download_date DESC')
 		show_dict = {}
 
 		for show in show_list:

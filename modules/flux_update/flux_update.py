@@ -13,7 +13,7 @@ class flux_update():
 
 	def run(self):
 
-		flux_id = input('Please insert the id of the show you want to update : ')
+		flux_id = int(input('Please insert the id of the show you want to update : '))
 
 		flux_mng = flux_manager()
 		flux = flux_mng.get_by_id(flux_id)

@@ -26,7 +26,7 @@ class fluxs_download():
         for flux in self.flux_list:
             flux_downloader = flux_download()
             download_results = flux_downloader.run(flux.id) #[True, True, str(flux.id), True]
-            
+                       
             success = success and download_results[0]
             clear =  success and download_results[1]
             report += download_results[2] + "\n\n" 

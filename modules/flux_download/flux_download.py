@@ -31,13 +31,9 @@ class flux_download():
 
 		if flux_id == None:
 			flux_id = int(input('Please insert the id of the show you want to download : '))
-		print(flux_id)
-		self.flux_mng = flux_manager()
-		#self.flux = self.flux_mng.get_by_id(flux_id, 0)
-		
-		fluxData = self.flux_mng.get_by_id(flux_id, 0)
-		self.flux = flux(fluxData[1], fluxData[2], fluxData[3])
-		self.flux.id = fluxData[0]
+
+		self.flux_mng = flux_manager()		
+		self.flux = self.flux_mng.get_by_id(flux_id)
 
 		self.show_list = []
 		XMLLoading = self.load_xml()
@@ -67,6 +63,13 @@ class flux_download():
 
 			show_data = []
 			if self.flux.keywords != None and len(self.flux.keywords) != 0:
+				k = ''
+				for keyword in self.flux.keywords:
+					k = k + ' ' + keyword
+				
+				
+				itemTitle = item.find('title').text
+				KeyWordCheck = any(keyword in item.find('title').text for keyword in self.flux.keywords)
 				if any(keyword in item.find('title').text for keyword in self.flux.keywords):
 					show_data = self.get_show_data(item)
 					new_show = show()

@@ -30,7 +30,7 @@ class show_manager(db_object):
 
 	def	get_all_by_remote_id(self):
 
-		show_list = self.get_all({'flux_id': self.flux_id}, 100, 'show_download_date DESC')
+		show_list = self.get_all({'flux_id': self.flux_id}, 100, 'show_diffusion_date DESC')
 		show_dict = {}
 
 		for show in show_list:

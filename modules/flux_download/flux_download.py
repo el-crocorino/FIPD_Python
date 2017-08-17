@@ -99,7 +99,7 @@ class flux_download():
 
 	def download_show_list(self):
 
-		self.show_mng = show_manager()
+		self.show_mng = show_manager(self.flux.id)
 		show_dict = self.show_mng.get_all_by_remote_id()
 
 		download_report = ''
@@ -107,6 +107,8 @@ class flux_download():
 		for show in self.show_list:
 
 			timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))
+		
+			show.diffusion_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S' + show.diffusion_date[-5:])
 			show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
 
 			show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title)

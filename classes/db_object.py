@@ -65,7 +65,7 @@ class db_object():
                 cursor.execute("""DELETE FROM sqlite_sequence WHERE name = '""" + self.table + """'""")
                 self.connexion.commit()
 
-        def get_all(self, where, itemLimit):
+        def get_all(self, where, itemLimit, sortOption):
 
                 cursor = self.connexion.cursor()
                 join_prefix = ', ' + self.prefix
@@ -80,7 +80,6 @@ class db_object():
                 if where:
                         condition = """ WHERE """
                         for field, value in where.items():
-                                print(field)
                                 if isinstance(value, str):
                                         condition += self.prefix + field + """ LIKE '""" + value + """'"""
                                 else:
@@ -90,16 +89,21 @@ class db_object():
                 if itemLimit:
                         limit = """ LIMIT """ + str(itemLimit)
                         
-                #print("""SELECT """ + fields + """ FROM """ + self.table + condition + limit)
                 
-                cursor.execute("""SELECT * FROM """ + self.table + condition + limit)
+                sort = """"""
+                if sortOption:
+                        sort = """ ORDER BY """ + sortOption 
+                
+                query = """SELECT * FROM """ + self.table + condition + sort + limit   
+                
+                cursor.execute(query)
                 rows = cursor.fetchall()
                 
                 return rows
 
         def get_by_id(self, itemId, maxItems = None):                
                 
-                item_list = db_object.get_all(self, {'id' : itemId}, maxItems)
+                item_list = db_object.get_all(self, {'id' : itemId}, maxItems, '')
 
                 return item_list[0]
 

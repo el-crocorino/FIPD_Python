@@ -10,7 +10,7 @@ class flux_manager(db_object):
 
 	def get_all(self, where = {}):
 
-		rows = super(flux_manager, self).get_all(where, 0)
+		rows = super(flux_manager, self).get_all(where, 0, '')
 
 		items = []
 

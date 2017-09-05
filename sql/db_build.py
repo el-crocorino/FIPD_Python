@@ -64,6 +64,7 @@ def create_show_table(conn):
 		    show_title TEXT,
 		    show_url TEXT,
 		    show_diffusion_date DATETIME,
+		    show_diffusion_timestamp TIMESTAMP,
 		    show_download_date DATETIME,
 		    show_status TEXT
 		)""")

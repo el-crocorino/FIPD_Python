@@ -30,7 +30,11 @@ class flux_download():
 	def run(self, flux_id = None):
 
 		if flux_id == None:
-			flux_id = int(input('Please insert the id of the show you want to download : '))
+			try:
+				flux_id = int(input('Please insert the id of the show you want to download : '))
+			except ValueError:
+				print('Please insert an integer as show id')
+				self.run()
 
 		self.flux_mng = flux_manager()		
 		self.flux = self.flux_mng.get_by_id(flux_id)
@@ -82,7 +86,9 @@ class flux_download():
 				new_show.load(show_data)
 
 				self.show_list.append(new_show)
-
+				
+		self.oldestShowTimestamp = self.getOldestShowTimestamp()
+		
 		return True
 
 	def get_show_data(self, xml_item):
@@ -94,16 +100,23 @@ class flux_download():
 				xml_item.find('title').text,
 				xml_item.find('guid').text,
 				xml_item.find('pubDate').text,
+				time.mktime(time.strptime(xml_item.find('pubDate').text, '%a, %d %b %Y %H:%M:%S ' + xml_item.find('pubDate').text[-5:])),
 				None,
 				'remote',
 			]
 
 			return show_data
+		
+	def getOldestShowTimestamp(self):
+		latestShow = self.show_list[-1]
+		#self.oldestShowTimestamp = time.mktime(time.strptime(latestShow.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + latestShow.diffusion_date[-5:]))
+		#return False;
+		return time.mktime(time.strptime(latestShow.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + latestShow.diffusion_date[-5:]))
 
 	def download_show_list(self):
 
 		self.show_mng = show_manager(self.flux.id)
-		show_dict = self.show_mng.get_all_by_remote_id()
+		show_dict = self.show_mng.get_all_by_remote_id({'diffusion_timestamp': self.oldestShowTimestamp}) 
 
 		download_report = ''
 

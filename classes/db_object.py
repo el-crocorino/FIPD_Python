@@ -80,10 +80,18 @@ class db_object():
                 if where:
                         condition = """ WHERE """
                         for field, value in where.items():
-                                if isinstance(value, str):
-                                        condition += self.prefix + field + """ LIKE '""" + value + """'"""
-                                else:
-                                        condition += self.prefix + field + """ = """ + str(value)
+                                
+                                if 'timestamp' in field:
+                                        condition += self.prefix + field + """ > """ + str(value)
+                                else : 
+                                        if isinstance(value, str):
+                                                condition += self.prefix + field + """ LIKE '""" + value + """'"""
+                                        else:
+                                                condition += self.prefix + field + """ = """ + str(value)
+                                                
+                                condition += ' AND ';
+                                
+                        condition = condition[:-5]
                 
                 limit = """"""
                 if itemLimit:

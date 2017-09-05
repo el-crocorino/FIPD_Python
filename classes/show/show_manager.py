@@ -6,7 +6,7 @@ from classes.show.show import show
 class show_manager(db_object):
 
 	def __init__(self, flux_id):
-		super(show_manager, self).__init__('show', ['remote_id', 'flux_id', 'title', 'url', 'diffusion_date', 'download_date', 'status'])
+		super(show_manager, self).__init__('show', ['remote_id', 'flux_id', 'title', 'url', 'diffusion_date', 'diffusion_timestamp', 'download_date', 'status'])
 		self.flux_id = flux_id
 
 	def get_all(self, params, maxLimit, order):
@@ -28,9 +28,12 @@ class show_manager(db_object):
 		except Exception as e:
 			print(e)	
 
-	def	get_all_by_remote_id(self):
+	def get_all_by_remote_id(self, where ):
+		
+		if where != None:
+			where['flux_id'] = self.flux_id
 
-		show_list = self.get_all({'flux_id': self.flux_id}, 100, 'show_diffusion_date DESC')
+		show_list = self.get_all(where, None, 'show_diffusion_date DESC')
 		show_dict = {}
 
 		for show in show_list:

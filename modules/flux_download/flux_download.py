@@ -1,3 +1,4 @@
+# coding: utf8
 # flux download
 
 import datetime
@@ -116,47 +117,51 @@ class flux_download():
 		self.show_mng = show_manager(self.flux.id)
 		show_dict = self.show_mng.get_all_by_remote_id({'diffusion_timestamp': self.oldestShowTimestamp}) 
 
-		download_report = ''
-
+		download_report = ''		
+	
+		showsDownloadList = []
 		for show in self.show_list:
-
-			timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))
-		
-			show.diffusion_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S' + show.diffusion_date[-5:])
-			show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
-
-			show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title)
-			if len(show_filename) > 65:
-				show_filename = show_filename[:65]
-				
-			show_filename += '.mp3'
-
-			show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
-
 			if show.remote_id in show_dict and show_dict[show.remote_id].status == 'downloaded':
-				download_report += '\n\t' + show_diff_date + ' - ' + show.title[:27] + '... - already downloaded (' + show_dict[show.remote_id].download_date + ')'
-				show.status = 'downloaded'			
-			else :
-
+				pass
+			else:
+				showsDownloadList.append(show)
+		
+		self.fileCounter = 1
+		self.filesCount = len(showsDownloadList)
+		
+		if not showsDownloadList:
+			download_report += '\n\tNo new podcast available for ' + self.flux.name + '.'
+		else:
+			for show in showsDownloadList:
+				
+				# Dates
+				timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))		
+				show.diffusion_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S' + show.diffusion_date[-5:])
+				show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
+	
+				# Filname & path
+				show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title)
+				if len(show_filename) > 65:
+					show_filename = show_filename[:65]				
+				show_filename += '.mp3'
+				show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
+	
 				show.status = 'error'
-
+				
 				try:
-
+				
 					remote_file_size = self.download_file(show, show_path)
-
+	
 					if remote_file_size == os.stat(show_path).st_size:
 						show.status = 'downloaded'
-
-					#print('Downloaded '+ show_filename)
-
-					show.status = 'downloaded'
-
+	
 				except Exception as e:
 					print(e)
-
+	
 				show.download_date = '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
 				self.show_mng.save([show.__dict__])
-
+				self.fileCounter = self.fileCounter+1
+				
 				download_report += '\n\t' + show_filename + ' - ' + show.status
 
 		return download_report
@@ -169,10 +174,9 @@ class flux_download():
 		u = urlopen(url)
 		f = open(file_name, 'wb')
 		meta = u.info()
-
+	
 		file_size = int(meta.get_all("Content-Length")[0])
-
-		print('Downloading: ' + show.diffusion_date[0:10] + ' ' + show.title[:27] + '. ' + str(file_size / 1000000) + ' Mo')
+		baseText = 'Downloading ' + str(self.fileCounter) + '/' + str(self.filesCount) + ': ' + show.diffusion_date[0:10] + ' ' + show.title[:27] + '. ' + str(file_size / 1000000)[:5] + ' Mo'
 
 		file_size_dl = 0
 		block_sz = 1000000
@@ -187,9 +191,9 @@ class flux_download():
 
 				file_size_dl += len(buffer)
 				f.write(buffer)
-				status = r"%10d  [%3.2f%%]" % (file_size_dl, file_size_dl * 100. / file_size)
-
-				status = status + chr(8)*(len(status)+1)
+				
+				status = r"  [%3.2f%%]" % (file_size_dl * 100. / file_size)
+				status = baseText + status + chr(8)*(len(baseText + status)+1)
 
 				sys.stdout.write('\r')
 				sys.stdout.write(status)
@@ -201,11 +205,7 @@ class flux_download():
 			except Exception as e:
 				print(e)
 
-		f.close()
-		
-		cursor_up_one = '\x1b[1A'
-		erase_line = '\x1b[2K'
-		print(erase_line)		
+		f.close()		
 
 		return file_size
 	

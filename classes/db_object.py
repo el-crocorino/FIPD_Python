@@ -1,4 +1,5 @@
 # Database object
+# coding: utf8
 
 import sqlite3
 import config
@@ -82,7 +83,7 @@ class db_object():
                         for field, value in where.items():
                                 
                                 if 'timestamp' in field:
-                                        condition += self.prefix + field + """ > """ + str(value)
+                                        condition += self.prefix + field + """ >= """ + str(value)
                                 else : 
                                         if isinstance(value, str):
                                                 condition += self.prefix + field + """ LIKE '""" + value + """'"""

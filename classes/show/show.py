@@ -1,3 +1,4 @@
+# coding: utf8
 # show object
 
 import time

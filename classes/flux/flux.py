@@ -1,4 +1,6 @@
 # flux object
+# coding: utf8
+# -*- coding: utf-8 -*-
 
 import datetime
 import json
@@ -32,7 +34,7 @@ class flux(db_object):
 
 		if data[3] != None and data[3] != '':
 		# if data[3] != None:    # TODO : Make sure that empty keywords are stored as NULL in database
-			self.keywords = json.loads(data[3])
+			self.keywords = json.loads(data[3].decode('utf8'))
 		else:
 			self.keywords = []
 

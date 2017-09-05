@@ -1,3 +1,4 @@
+# coding: utf8
 # config object
 
 from classes.db_object import db_object

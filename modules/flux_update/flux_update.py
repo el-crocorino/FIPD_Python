@@ -1,7 +1,9 @@
+# coding: utf8
 # update Flux Module
 
 import datetime
 import json
+import sys
 
 from classes.flux.flux import flux
 from classes.flux.flux_manager import flux_manager
@@ -35,7 +37,6 @@ class flux_update():
 				flux.url = input('Please enter show\'s new rss adress : ')
 			elif action == 'K':
 				print('Current keywords are : ', flux.keywords)
-
 				keywords_string = input('Please enter show\'s new comma-separated keywords list, or press (R) to reset keywords list : ')
 
 				new_keywords = []
@@ -52,7 +53,7 @@ class flux_update():
 
 				flux.keywords = new_keywords
 
-			flux.keywords = json.dumps(flux.keywords, separators = (',', ':'))
+			flux.keywords = json.dumps(flux.keywords, separators = (',', ':')).encode('utf8')
 			flux.updated_date = '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
 
 			flux.save([flux.__dict__])

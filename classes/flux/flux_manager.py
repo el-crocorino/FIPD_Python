@@ -1,3 +1,4 @@
+# coding: utf8
 # flux manager
 
 from classes.db_object import db_object

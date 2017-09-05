@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# coding: utf8
 # FIPD
 from classes.app import app
 from classes.show import show

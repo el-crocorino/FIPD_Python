@@ -1,3 +1,4 @@
+# coding: utf8
 # flush database Module
 
 from classes.config.config_manager import config_manager

@@ -1,3 +1,4 @@
+# coding: utf8
 # delete Flux Module
 
 from classes.flux.flux import flux

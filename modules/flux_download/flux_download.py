@@ -190,7 +190,7 @@ class flux_download():
 		meta = u.info()
 	
 		file_size = int(meta.get_all("Content-Length")[0])
-		baseText = 'Downloading ' + str(self.fileCounter) + '/' + str(self.filesCount) + ': ' + show.diffusion_date[0:10] + ' ' + show.title[:27] + '. ' + str(file_size / 1000000)[:5] + ' Mo'
+		baseText = 'Downloading ' + self.flux.name[:8] + '... ' + str(self.fileCounter) + '/' + str(self.filesCount) + ': ' + show.diffusion_date[0:10] + ' ' + show.title[:27] + '. ' + str(file_size / 1000000)[:5] + ' Mo'
 
 		file_size_dl = 0
 		block_sz = 1000000

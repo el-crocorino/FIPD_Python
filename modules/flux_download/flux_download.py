@@ -109,8 +109,6 @@ class flux_download():
 		
 	def getOldestShowTimestamp(self):
 		latestShow = self.show_list[-1]
-		#self.oldestShowTimestamp = time.mktime(time.strptime(latestShow.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + latestShow.diffusion_date[-5:]))
-		#return False;
 		return time.mktime(time.strptime(latestShow.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + latestShow.diffusion_date[-5:]))
 
 	def download_show_list(self):
@@ -136,7 +134,6 @@ class flux_download():
 			show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
 
 			if show.remote_id in show_dict and show_dict[show.remote_id].status == 'downloaded':
-				#print('This show has already been downloaded on ', show_dict[show.remote_id].download_date)
 				download_report += '\n\t' + show_diff_date + ' - ' + show.title[:27] + '... - already downloaded (' + show_dict[show.remote_id].download_date + ')'
 				show.status = 'downloaded'			
 			else :
@@ -150,7 +147,7 @@ class flux_download():
 					if remote_file_size == os.stat(show_path).st_size:
 						show.status = 'downloaded'
 
-					print('Downloaded '+ show_filename)
+					#print('Downloaded '+ show_filename)
 
 					show.status = 'downloaded'
 
@@ -175,7 +172,7 @@ class flux_download():
 
 		file_size = int(meta.get_all("Content-Length")[0])
 
-		print('Downloading: ' + show.diffusion_date + ' ' + show.title[:27] + '. ' + str(file_size / 1000000) + ' Mo')
+		print('Downloading: ' + show.diffusion_date[0:10] + ' ' + show.title[:27] + '. ' + str(file_size / 1000000) + ' Mo')
 
 		file_size_dl = 0
 		block_sz = 1000000
@@ -205,6 +202,10 @@ class flux_download():
 				print(e)
 
 		f.close()
+		
+		cursor_up_one = '\x1b[1A'
+		erase_line = '\x1b[2K'
+		print(erase_line)		
 
 		return file_size
 	

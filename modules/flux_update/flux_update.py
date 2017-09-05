@@ -1,3 +1,4 @@
+# coding: utf8
 # update Flux Module
 
 import datetime

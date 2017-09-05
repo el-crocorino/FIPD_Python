@@ -1,3 +1,4 @@
+# coding: utf8
 # fluxs download
 
 from classes.flux.flux import flux

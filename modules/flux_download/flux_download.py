@@ -68,13 +68,14 @@ class flux_download():
 
 			show_data = []
 			if self.flux.keywords != None and len(self.flux.keywords) != 0:
+				'''
 				k = ''
 				for keyword in self.flux.keywords:
 					k = k + ' ' + keyword
-				
+				'''
 				
 				itemTitle = item.find('title').text
-				KeyWordCheck = any(keyword in item.find('title').text for keyword in self.flux.keywords)
+				# DebugKeyWordCheck = any(keyword in item.find('title').text for keyword in self.flux.keywords)
 				if any(keyword in item.find('title').text for keyword in self.flux.keywords):
 					show_data = self.get_show_data(item)
 					new_show = show()
@@ -88,7 +89,7 @@ class flux_download():
 
 				self.show_list.append(new_show)
 				
-		self.oldestShowTimestamp = self.getOldestShowTimestamp()
+		self.getOldestShowTimestamp()
 		
 		return True
 
@@ -109,60 +110,73 @@ class flux_download():
 			return show_data
 		
 	def getOldestShowTimestamp(self):
-		latestShow = self.show_list[-1]
-		return time.mktime(time.strptime(latestShow.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + latestShow.diffusion_date[-5:]))
+		
+		if not self.show_list:
+			pass
+		else:		
+			latestShow = self.show_list[-1]
+			self.oldestShowTimestamp = time.mktime(time.strptime(latestShow.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + latestShow.diffusion_date[-5:]))
 
 	def download_show_list(self):
-
-		self.show_mng = show_manager(self.flux.id)
-		show_dict = self.show_mng.get_all_by_remote_id({'diffusion_timestamp': self.oldestShowTimestamp}) 
-
-		download_report = ''		
-	
-		showsDownloadList = []
-		for show in self.show_list:
-			if show.remote_id in show_dict and show_dict[show.remote_id].status == 'downloaded':
-				pass
-			else:
-				showsDownloadList.append(show)
 		
-		self.fileCounter = 1
-		self.filesCount = len(showsDownloadList)
-		
-		if not showsDownloadList:
-			download_report += '\n\tNo new podcast available for ' + self.flux.name + '.'
+		if not self.show_list:
+			
+			k = ''
+			for keyword in self.flux.keywords:
+				k = k + ' ' + keyword
+			download_report = '\n\tNo new podcast matching keywords (' + k + ' ) for ' + self.flux.name + '.'
+			
 		else:
-			for show in showsDownloadList:
-				
-				# Dates
-				timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))		
-				show.diffusion_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S' + show.diffusion_date[-5:])
-				show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
+
+			self.show_mng = show_manager(self.flux.id)
+			show_dict = self.show_mng.get_all_by_remote_id({'diffusion_timestamp': self.oldestShowTimestamp}) 
 	
-				# Filname & path
-				show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title)
-				if len(show_filename) > 65:
-					show_filename = show_filename[:65]				
-				show_filename += '.mp3'
-				show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
-	
-				show.status = 'error'
-				
-				try:
-				
-					remote_file_size = self.download_file(show, show_path)
-	
-					if remote_file_size == os.stat(show_path).st_size:
-						show.status = 'downloaded'
-	
-				except Exception as e:
-					print(e)
-	
-				show.download_date = '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
-				self.show_mng.save([show.__dict__])
-				self.fileCounter = self.fileCounter+1
-				
-				download_report += '\n\t' + show_filename + ' - ' + show.status
+			download_report = ''		
+		
+			showsDownloadList = []
+			for show in self.show_list:
+				if show.remote_id in show_dict and show_dict[show.remote_id].status == 'downloaded':
+					pass
+				else:
+					showsDownloadList.append(show)
+			
+			self.fileCounter = 1
+			self.filesCount = len(showsDownloadList)
+			
+			if not showsDownloadList:
+				download_report += '\n\tNo new podcast available for ' + self.flux.name + '.'
+			else:
+				for show in showsDownloadList:
+					
+					# Dates
+					timestamp = time.mktime(time.strptime(show.diffusion_date, '%a, %d %b %Y %H:%M:%S ' + show.diffusion_date[-5:]))		
+					show.diffusion_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S' + show.diffusion_date[-5:])
+					show_diff_date = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
+		
+					# Filname & path
+					show_filename = show_diff_date + '_' + self.get_valid_filename(self.flux.name + '_' + show.title)
+					if len(show_filename) > 65:
+						show_filename = show_filename[:65]				
+					show_filename += '.mp3'
+					show_path = self.conf['download_dir'] + '/' + self.flux.name + '/' + show_filename
+		
+					show.status = 'error'
+					
+					try:
+					
+						remote_file_size = self.download_file(show, show_path)
+		
+						if remote_file_size == os.stat(show_path).st_size:
+							show.status = 'downloaded'
+		
+					except Exception as e:
+						print(e)
+		
+					show.download_date = '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
+					self.show_mng.save([show.__dict__])
+					self.fileCounter = self.fileCounter+1
+					
+					download_report += '\n\t' + show_filename + ' - ' + show.status
 
 		return download_report
 
